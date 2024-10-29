@@ -1,0 +1,67 @@
+h1. Responsive Web Design
+
+Responsive web design is about creating %{color:yellow}web pages that look good on all devices% !
+A responsive web design will %{color:yellow}automatically adjust for different screen sizes and viewports%.
+
+https://www.w3schools.com/html/html_responsive.asp
+
+
+h2. +◆ Viewport+
+
+<pre><code><meta name="viewport" content="width=device-width, initial-scale=1.0"></code></pre>
+
+This will set the viewport of your page, which will %{color:yellow}give the browser instructions on how to control the page's dimensions and scaling%.
+
+
+h2. +◆Responsive Images+
+ 
+<pre><code><img src="img_girl.jpg" style="width:100%;"></code></pre>
+
+If the CSS %{color:yellow}width property is set to 100%%, the image will be responsive and scale up and down:
+
+h3. ◇ Using the max-width Property
+
+<pre><code><img src="img_girl.jpg" style="max-width:100%;height:auto;"></code></pre>
+
+
+If the max-width property is set to 100%, the image will scale down if it has to, but %{color:yellow}never scale up to be larger than its original size%:
+
+
+h3. ◇ Show Different Images %{color:yellow}Depending on Browser Width%
+
+The HTML <code><picture></code> element allows you to define %{color:yellow}different images for different browser window sizes%.
+
+<pre><code>
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+  <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+  <source srcset="flowers.jpg">
+  <img src="img_smallflower.jpg" alt="Flowers">
+</picture>
+</code></pre>
+
+
+h2. +◆ Responsive Text Size+
+
+The text size can be set with a <code>"vw"</code> unit, which means the %{color:yellow}"viewport width"%.
+That way the %{color:yellow}text size will follow the size of the browser window%:
+
+<pre><code><h1 style="font-size:10vw">Hello World</h1></code></pre>
+
+%{color:yellow}Viewport is the browser window size%. 
+%{color:yellow}1vw = 1% of viewport width%. 
+If the viewport is 50cm wide, 1vw is 0.5cm.
+
+
+h2. +◆ Media Queries+
+
+In addition to resize text and images, it is also common to use %{color:yellow}media queries% in responsive web pages.
+With media queries you can define %{color:yellow}completely different styles for different browser sizes%.
+
+
+Tip: To learn more about Media Queries and Responsive Web Design, read our "RWD Tutorial":https://www.w3schools.com/css/css_rwd_intro.asp.
+
+
+
+<pre><code> </code></pre>
+<pre><code> </code></pre>

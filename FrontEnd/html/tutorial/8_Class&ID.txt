@@ -1,0 +1,75 @@
+h1. HTML class Attribute
+
+概要は常識なのでスキップ
+
+h2. ◆Use of The class Attribute in CSS
+
+To create a class; %{color:yellow}write a period ( <code>.</code> ) character, followed by a class name%. 
+Then, define the CSS properties within curly braces {}:
+
+<pre><code>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</code></pre>
+
+=>This CSS is applied to elements with class attribute <code> class="city" </code>
+<pre><code>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+</code></pre>
+
+
+h2. ◆Use of The class Attribute in JavaScript
+
+The class name can also be used by JavaScript to perform certain tasks for specific elements.
+JavaScript can access elements with a specific class name with the <code>getElementsByClassName()</code> method:
+
+<pre><code>
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+</code></pre>
+
+
+h2. Multiple Classes
+
+HTML elements can %{color:yellow}belong to more than one class%.
+
+To define multiple classes, separate the class names %{color:yellow}with a space%, e.g.<code> <div class="city main"></code> .
+
+
+---
+
+---
+
+
+h1. HTML id Attribute
+
+h2. ◆Using The id Attribute in CSS
+
+The syntax for id is: %{color:yellow}write a hash character (<code>#</code>), followed by an id name%. 
+Then, define the CSS properties within curly braces {}.
+
+h2. ◆Using The id Attribute in JavaScript
+
+JavaScript can access an element with a specific id with the <code>getElementById()</code> method:
+
+<pre><code>
+<script>
+function displayResult() {
+  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+</script>
+</code></pre>

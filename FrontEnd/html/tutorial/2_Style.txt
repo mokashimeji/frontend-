@@ -1,0 +1,29 @@
+h1. Style Attribute
+
+The HTML style attribute has the following syntax:
+
+<code><tagname style="property:value;"></code>
+
+%{color:yellow}The property is a CSS property. The value is a CSS value%
+
+https://www.w3schools.com/html/html_styles.asp
+
+h2. ◆background-color
+
+<code>style="background-color:powderblue;</code>
+
+h2. ◆Text Color
+
+<code>style="color:red;"</code>
+
+h2. ◆Fonts
+
+<code>style="font-family:verdana;"</code>
+
+h2. ◆Text Size
+
+<code>style="font-size:300%;"</code>
+
+h2. ◆Alignment
+
+<code>style="text-align:center;"</code>

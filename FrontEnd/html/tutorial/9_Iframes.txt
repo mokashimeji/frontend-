@@ -1,0 +1,44 @@
+h1. HTML Iframes
+
+An HTML iframe is used to display a %{color:yellow}web page within a web page%.
+
+https://www.w3schools.com/html/html_iframe.asp
+
+h2. ◆HTML Iframe Syntax
+
+The HTML <code><iframe></code> tag specifies an %{color:yellow}inline frame%.
+
+An inline frame is used to %{color:yellow}+embed+ another document within the current HTML document%.
+
+<pre><code>
+<iframe src="https://www.w3schools.com/html/html_iframe.asp" title="description"></iframe>
+</code></pre>
+
+Tip: It is a good practice to %{color:yellow}always include a title attribute% for the <code><iframe></code>. 
+This is used by screen readers to read out what the content of the iframe is.
+
+h2. ◆Set Height and Width
+
+Use the <code>height</code> and <code>width</code> attributes to specify the size of the iframe.
+Or you can add the style attribute and use the CSS height and width properties:
+
+
+h2. ◆Target for a Link
+
+この前やった仕入れから発注書参照するみたいなのできそう
+
+%{color:yellow}An iframe can be used as the target frame for a link%.
+
+The %+{color:yellow}<code>target</code> attribute+% of the link %{color:yellow}must refer to the <code>name</code> attribute of the iframe%:
+
+Linkの "target attributeについて":https://www.w3schools.com/html/html_links.asp
+
+
+
+<pre><code>
+<iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+</code></pre>
+
+https://www.w3schools.com/html/html_iframe.asp

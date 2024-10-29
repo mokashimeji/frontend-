@@ -1,0 +1,83 @@
+h1. Input Types
+
+h2. +◆ <code><input type="password"></code>+
+
+The characters in a password field are masked (shown as asterisks or circles).
+
+<form>
+  <label for="pwd">Password:</label><br>
+  <input type="password" id="pwd" name="pwd">
+</form>
+
+h3. %{color:orange}◇ Wicket%
+
+PasswordTextField
+
+---
+
+---
+
+h2. +◆<code><input type="submit"></code>+
+
+<code><input type="submit"></code> %{color:yellow}defines a button for submitting form data% to a form-handler.
+%{color:yellow}The form-handler is specified in the form's action attribute%:
+
+If you omit the submit button's value attribute, the button will get a default text:
+
+h3. %{color:orange}◇ Wicket%
+
+<code>Button extends FormComponent<String></code>
+
+---
+
+---
+
+
+h2. +◆<code><input type="color"></code>+
+
+Input fields that should %{color:yellow}contain a color%.
+Depending on browser support, a color picker can show up in the input field.
+
+Ex Color: <input type="color">
+
+h3. %{color:orange}◇ Wicket%
+
+
+---
+
+---
+
+h2. +◆<code><input type="date"></code>+
+
+Input fields that should %{color:yellow}contain a date%.
+Depending on browser support, a date picker can show up in the input field.
+
+<input type="date">
+
+h3. %{color:orange}◇ Wicket%
+
+AtmsDatePicket(ATMS産)
+DateTextField(Wicket産)
+どちらもTextFieldを継承
+
+↓DateTextFieldを利用した実装
+<pre><code>new DateTextField("date")
+<td class="field"><input type="date" wicket:id="date"/></td></code></pre>
+
+---
+
+---
+
+
+h2. +◆ <code><input type="reset"></code>+
+
+defines a %{color:yellow}reset button that will reset all form values% to their default values:
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>

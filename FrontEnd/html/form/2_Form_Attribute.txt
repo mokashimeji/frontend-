@@ -1,0 +1,32 @@
+h1. HTML Form Attributes
+
+Attributes for the HTML <code><form></code> element.
+
+h2. +◆ The <code>Action</code> Attribute+
+
+* The +action attribute+ defines %{color:yellow}the action to be performed when the form is submitted%.
+* Usually, %{color:yellow}the form data is sent to a file on the server% when the user clicks on the submit button.
+* In the example below, %{color:yellow}the form data is sent to a file called "action_page.php"%. 
+This file contains a server-side script that handles the form data:
+
+<pre><code>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</code></pre>
+
+★ Tip: If the action attribute is omitted, %{color:yellow}the action is set to the current page%.
+
+h2. +◆The Target Attribute+
+
+* The target attribute specifies %{color:yellow}where to display the response% that is received after submitting the form.
+* The target attribute can have one of the following values:
+** <code>target="_blank"</code>: The response is displayed in a new window or tab
+** <code>target="_self"</code>: The response is displayed in the current window
+** <code>target="_parent"</code>: The response is displayed in the parent frame
+** <code>target="_top"</code>: The response is displayed in the full body of the window
+** <code>target="framename"</code>: The response is displayed in a named iframe

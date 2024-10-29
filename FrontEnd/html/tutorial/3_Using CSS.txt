@@ -1,0 +1,45 @@
+h1. Styles - CSS
+
+CSS stands for %{color:yellow}Cascading Style Sheets%.
+
+ The word %{color:yellow}cascading% means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!
+
+https://www.w3schools.com/html/html_css.asp
+
+
+
+h2. ◆Using CSS
+
+CSS can be added to HTML documents in 3 ways:
+
+* Inline - by using the %{color:yellow}style attribute% inside HTML elements
+* Internal - by using a %{color:yellow}<style> element in the <head> section%
+* External - by using a %{color:yellow}< link> element% to link to an external CSS file
+
+
+h2. ◆Inline CSS
+
+An inline CSS is used to %{color:yellow}apply a unique style to a single HTML element% .
+An inline CSS uses the %{color:yellow}style attribute% of an HTML element.
+
+
+h2. ◆Internal CSS
+
+In internal CSS is used to define a style for a single HTML page.
+An internal CSS is defined in the <head> section of an HTML page, within a <style> element.
+
+h3. %{color:orange}WicketにおけるCSSの扱い%
+
+"WicketにおけるInternal CSS":https://nightlies.apache.org/wicket/guide/10.x/single.html#_adding_header_contents_to_the_final_page
+"CssHeaderItemメソッドによる InternalCSS の実現":https://nightlies.apache.org/wicket/guide/10.x/single.html#_adding_resources_to_page_header_section
+
+h2. ◆External CSS
+
+An external style sheet is used to %{color:yellow}define the style for many HTML pages% .
+To use an external style sheet, %{color:yellow}add a link to it in the <head> section of each HTML page% :
+
+<pre>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+</pre>

@@ -1,0 +1,24 @@
+h2. HTML <abbr> Tag
+
+abbreviation: a shortened form of a word or phrase.
+
+* The <abbr> tag defines an %{color:yellow}abbreviation or an acronym%, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+* The <abbr> tag supports the "Global Attributes in HTML":https://www.w3schools.com/tags/ref_standardattributes.asp .
+* The <abbr> tag supports the "Event Attributes in HTML":https://www.w3schools.com/tags/ref_eventattributes.asp.
+
+Tip: Use the global title attribute to show the description for the abbreviation/acronym when you mouse over the element.
+
+
+h3. Example
+
+<abbr> can also be used with <dfn> to define an abbreviation:
+
+<pre><code>
+<p>
+    <dfn><abbr title="Cascading Style Sheets">CSS</abbr></dfn> 
+    is a language that describes the style of an HTML document.
+</p>
+</code></pre>
+
+<p><dfn><abbr title="Cascading Style Sheets">CSS</abbr>
+</dfn> is a language that describes the style of an HTML document.</p>

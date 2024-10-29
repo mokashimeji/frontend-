@@ -1,0 +1,25 @@
+h1. Block and Inline Elements
+
+Every HTML element has a %{color:yellow}default display value, depending on what type of element it is%.
+The two most common display values are %{color:yellow}block and inline%. 
+
+https://www.w3schools.com/html/html_blocks.asp
+
+h2.  ◆Block-level Elements
+
+Two commonly used block elements are: <code><p></code> and <code><div></code>.
+* The <p> element defines a paragraph in an HTML document.
+* he <div> element defines a division or a section in an HTML document.
+
+A block-level element always %{color:yellow}starts on a new line%, and the %{color:yellow}browsers automatically add some space (a margin)% before and after the element.
+
+A block-level element always %{color:yellow}takes up the full width available% (stretches out to the left and right as far as it can).
+
+
+h2. ◆Inline Elements
+
+commonly used inline element is : <code><span></code> , <code><textarea></code>
+An inline element %{color:yellow}does not start on a new line%.
+
+An inline element only takes up %{color:yellow}as much width as necessary%.
+

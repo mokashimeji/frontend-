@@ -1,0 +1,5 @@
+h2. HTML <base> Tag
+
+百聞は一見に如かず
+
+https://www.w3schools.com/tags/tag_base.asp

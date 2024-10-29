@@ -1,0 +1,37 @@
+h1. Attribute
+
+https://www.w3schools.com/html/html_attributes.asp
+
+* All HTML elements can have attributes
+* Attributes provide additional information about elements
+* Attributes are always specified in the start tag
+* Attributes usually come in name/value pairs like: name="value"
+
+h2. ◆The lang Attribute
+
+You should always include the lang attribute inside the <code><html></code> tag, to declare the language of the Web page. 
+This is meant to %{color:yellow}assist search engines and browsers%.
+
+<pre>
+<!DOCTYPE html>
+<html lang="en">
+ <body>
+ ...
+ </body>
+</html>
+</pre>
+
+h2. ◆The title Attribute
+
+The title attribute defines some extra information about an element.
+%{color:yellow}The value of the title attribute will be displayed as a tooltip% when you mouse over the element:
+
+h3. ◆ %{color:orange}Wicket関連%
+
+"onComponentTagによるAttributeの追加":https://nightlies.apache.org/wicket/guide/10.x/single.html#_method_oncomponenttag
+ 
+ Method onComponentTag(ComponentTag) is called to process a component tag, which can be freely manipulated through its argument of type org.apache.wicket.markup.ComponentTag. 
+ For example we can %{color:yellow}add/remove tag attributes% with methods put(String key, String value) and remove(String key), 
+ or we can even decide to change the tag or rename it with method setName(String)
+
+<div style="color:blue;">A Blue Heading</div>

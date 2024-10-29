@@ -1,0 +1,16 @@
+h2. HTML <address> Tag
+
+* The <address> tag defines the %{color:yellow}contact information% for the author/owner of a document or an article.
+* The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+* The text in the <address> element usually %{color:yellow}renders in italic%, and %{color:yellow}browsers will always add a line break% before and after the <address> element.
+
+
+h3. Example
+
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address>

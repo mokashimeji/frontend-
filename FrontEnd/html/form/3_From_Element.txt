@@ -1,0 +1,74 @@
+h1. Form Element
+
+h2. +◆ <code><input></code>+
+
+One of the most used form elements is the <code><input></code> element.
+The <code><input></code> element %{color:yellow}can be displayed in several ways, depending on the type attribute%.
+
+
+h2. +◆ <select>+
+
+The <select> element defines a %{color:yellow}drop-down list% :
+
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat" selected>Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+<pre><code>
+<select id="cars" name="cars" >
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat" selected>Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+</code></pre>
+
+h3. ◇ <code>selected</code> attribute
+
+By default, the first item in the drop-down list is selected.
+To define a %{color:yellow}pre-selected% option, add the <code>selected</code> attribute to the option:
+
+h3. ◇ Allow %{color:yellow}Multiple% Selections:
+
+Use the <code>multiple</code> attribute to allow the user to select more than one value:
+
+<pre><code>
+<select id="cars" name="cars" size="4" multiple>
+</code></pre>
+
+
+h2. +◆ <output>+ 
+
+The <code><output></code> element %{color:yellow}represents the result of a calculation% (like one performed by a script).
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+</form>
+
+
+h2. +◆ <label>+
+
+略
+
+h2. +◆ <textarea>+
+
+略
+
+h2. +◆ <button>+
+
+略
+
+h2. +◆ <datalist>+
+
+略
+
+

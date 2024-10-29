@@ -1,0 +1,50 @@
+h1. HTML Links
+
+h2. ◆ HTML Links - Syntax
+
+The HTML <a> tag defines a hyperlink.
+
+<pre><a href="url">link text</a></pre>
+
+The most important attribute of the <a> element is the %{color:yellow}href +attribute+%, which indicates the link's destination.
+
+%{color:yellow}★<code><a></code>と<code>href="url"</code>についても所詮はElementとAttributeの関係だということを意識%
+
+h2. ◆The target Attribute
+
+%{color:yellow}By default%, the linked page will be displayed in the current browser window. 
+To change this, you must specify another target for the link.
+
+The %{color:yellow}target attribute% specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+* _self :  Default. Opens the document in the same window/tab as it was clicked
+* _blank :  Opens the document in a new window or tab
+* _parent : Opens the document in the parent frame
+* _top : Opens the document in the full body of the window
+
+
+<pre><code><a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a></code></pre>
+
+★1Elementに対して複数のAttributeを設定することも可能
+
+
+h2. ◆Link to an Email Address
+
+Use <code>mailto:</code> inside the href attribute to %{color:yellow}create a link that opens the user's email program% (to let them send a new email):
+
+<pre><code><a href = "mailto:someone@example.com">Send email</a></code></pre>
+<a href = "mailto:someone@example.com">例: Send email</a>
+
+h2. ◆Create a Bookmark in HTML
+
+First use the %{color:yellow}id attribute% to create a bookmark:
+<pre><code><h2 id="C4">Chapter 4</h2></code></pre>
+
+Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:
+<pre><code><a href="#C4">Jump to Chapter 4</a></code></pre>
+
+You can also add a link to a bookmark on another page:
+<pre><code><a href="html_demo.html#C4">Jump to Chapter 4</a></code></pre>
+
+

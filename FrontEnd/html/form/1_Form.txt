@@ -1,0 +1,71 @@
+h1. Form
+
+* An HTML form is used to collect user input. 
+* The user input is most often sent to a server for processing.
+* The <code><form></code> element is a %{color:yellow}container for different types of input elements% ; such as 
+** <code><input></code>
+** <code><label></code>
+** <code><select></code>
+** <code><textarea></code>
+** <code><button></code>
+** <code><option></code>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+
+All the different form elements are covered in this chapter: "HTML Form Elements":https://www.w3schools.com/html/html_form_elements.asp .
+
+%{color:orange}★この<form> elementこそが、WicketにおけるFormComponent%
+* DropDownChoice
+* TextField
+* Button
+* etc
+
+
+h2. +◆The <code><input></code> Element+
+
+* One of the most used form elements is the <code><input></code> element.
+* The <code><input></code> element represents a typed data field, usually with a form control %{color:yellow}to allow the user to edit the data%. 
+* The <code><input></code> element can be displayed in several ways, %{color:yellow}depending on the <code>type</code> attribute%.
+<form>
+  <label for="text_id"> &lt;input type="text"&gt;:</label> <input type="text" id="text_id"><br>
+  <label for="checkbox_id">&lt;input type="checkbox"&gt;:</label> <input type="checkbox" id="checkbox_id"><br>
+  &lt;input type="submit" value="送信"&gt;: <input type="submit" value="送信"><br>
+  &lt;input type="button" value="ボタン"&gt;: <input type="button" value="ボタン">
+</form>
+
+h2. +◆ The <code><label></code> Element+
+
+Notice the use of the <label> element in the example above!
+
+* The <code><label></code> element also helps users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because %{color:yellow}when the user clicks the text within the <label> element, it toggles the radio button/checkbox%.
+* %{color:yellow}The <code>for</code> attribute% of the <code><label></code> tag should be %{color:yellow}equal to the <code>id</code> attribute of the <code><input></code> element% to bind them together.
+
+
+h2. +◆The Submit Button+
+
+* The <code><input type="submit"></code> defines a button for submitting the form data %{color:yellow}to a form-handler%.
+* The form-handler is typically %{color:yellow}a file on the server with a script for processing input data% .
+* %{color:yellow}*The form-handler is specified in the +form's <code>action</code> attribute+*%.
+** => %{color:orange}だからボタンを押したときの挙動を「Action」クラスで管理している%
+
+<pre><code>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+</code></pre>
+
+h2. +◆ The Name Attribute for<code><input></code>+
+
+* Notice that each input field %{color:yellow}must have a <code>name</code> attribute% to be submitted.
+* If the name attribute is omitted, the value of the input field will not be sent at all.
+
+
+  <input type="submit" value="送信">
