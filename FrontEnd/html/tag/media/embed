@@ -1,0 +1,25 @@
+h2. HTML <embed> Tag
+
+The <embed> tag defines %{color:yellow}a container for an external resource%, such as a web page, a picture, a media player, or a plug-in application.
+
+
+<pre>
+<embed type="image/jpg" src="pic_trulli.jpg" width="300" height="200">
+<embed type="text/txt" src="4.audio.txt" width="500" height="200">
+</pre>
+
+
+h3. Warning
+* Most browsers no longer support Java Applets and Plug-ins.
+* ActiveX controls are no longer supported in any browsers.
+* The support for Shockwave Flash has also been turned off in modern browsers.
+
+h3. Suggestion
+
+To display a picture, it is %{color:yellow}better to use the <code><img></code>% tag.
+
+To display HTML, it is %{color:yellow}better to use the <code><iframe></code>% tag.
+
+To display video or audio, it is %{color:yellow}better to use the <video> and <audio>% tags
+
+    

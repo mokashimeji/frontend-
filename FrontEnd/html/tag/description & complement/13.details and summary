@@ -1,0 +1,14 @@
+h2. HTML <details> Tag
+
+* The <details> tag specifies additional details that the %{color:yellow}user can open and close% on demand.
+* The <details> tag is often used to create an interactive widget that the user can open and close. By default, the widget is closed. When open, it expands, and displays the content within.
+* Any sort of content can be put inside the <code><details></code> tag. 
+
+*Tip*
+The <code><summary></code> tag is used in conjunction with <code><details></code> to specify a visible heading for the details.
+
+
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>

@@ -1,0 +1,29 @@
+h2. HTML %{color:yellow}<!DOCTYPE>% Declaration
+
+All HTML documents %{color:yellow}must start with a <!DOCTYPE> declaration% .
+The declaration is not an HTML tag. 
+It is an %{color:yellow}"information" to the browser% about what document type to expect.
+
+In HTML 5, the declaration is simple:
+
+<code><!DOCTYPE html></code>
+
+
+h2. %{color:yellow}Older% HTML Documents
+
+In older documents (HTML 4 or XHTML), the declaration is more complicated.
+Because the declaration %{color:yellow}must refer to a DTD (Document Type Definition)%.
+
+HTML 4.01:
+
+<pre><code>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+</code></pre>
+
+XHTML 1.1:
+
+<pre><code>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+</code></pre>

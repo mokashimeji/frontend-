@@ -2,7 +2,8 @@ h2. HTML <datalist> Tag
 * Specifies %{color:yellow}a list of pre-defined options for an <code><input></code> element%.
 * Used to provide an %{color:yellow}"autocomplete" feature for <code><input></code> elements%. 
 Users see %{color:yellow}a drop-down list of pre-defined options% as they input data.
-* The <code><datalist></code> element's id attribute %{color:yellow}must be equal to the <code><input></code> element's list attribute% (this binds them together).
+* The <code><datalist></code> element's <code>id</code> attribute %{color:yellow}must be equal to the <code><input></code> element's <code>list</code> attribute% (this binds them together).
+
 
 <label for="browser">Choose your browser from the list:</label>
 <input list="browsers" name="browser" id="browser">

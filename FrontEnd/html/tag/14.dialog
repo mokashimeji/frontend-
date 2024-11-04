@@ -1,0 +1,8 @@
+h2. HTML <dialog> Tag
+
+* The <code><dialog></code> tag defines a %{color:yellow}dialog box or subwindow%.
+* The <code><dialog></code> element makes it easy to create %{color:yellow}popup dialogs and modals% on a web page.The <code><dialog></code> tag defines a dialog box or subwindow.
+
+
+<dialog open>This is an open dialog window</dialog>
+
